@@ -1,0 +1,22 @@
+.sidenav{
+    height: 100vh;
+    background-image:  linear-gradient(#6718de, 70%, rgb(166, 2, 220));  
+    width: 100vw;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.flexs{
+    display: flex;
+}
+.img-thumbnail{
+    width:7em;
+    height: auto;
+}
+body{
+    width: 100vw;
+}
+.text-dark{
+    padding-top: 5%;
+}
