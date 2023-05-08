@@ -16,6 +16,10 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
     <link rel="stylesheet" href="assets/styles/styleforitems.css" />
 
     <title>Items</title>
@@ -24,29 +28,56 @@
     <div class="row">
       <div class="col-2 sidenav">
         <nav class="navbar">
-          <ul class="nav navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html"> SunPasal </a>
+          <ul class="nav navbar-nav ">
+            <li>
+              <a class="nav-link" href="index.html"> <img class="logo-img" src="assets/images/logo.png" alt="hhu">  </a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html"><i class="uil uil-estate"></i> Home </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.html"> Home </a>
+              <a class="nav-link" href="items.html"> <i class="uil uil-gold"></i> Items</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="items.html"> Items</a>
+              <a class="nav-link" href="workers.html"><i class="uil uil-users-alt"></i> Workers </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="workers.html"> Workers </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="assign.html"> Assign </a>
+              <a class="nav-link" href="assign.html"> <i class="uil uil-file-alt"></i>Assign </a>
             </li>
           </ul>
         </nav>
       </div>
+      <div class=" topnav">
+        <nav class="navbar">
+        <ul class="nav navbar-nav ">
+          <li>
+            <a class="nav-link" href="index.html"> <img class="logo-img" src="assets/images/logo.png" alt="hhu">  </a>
+          </li>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="uil uil-bars"></i>
+          </a>
+          <div id="mylinks">
+          <li class="nav-item ">
+            <a class="nav-link" href="index.html"><i class="uil uil-estate"></i> Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="items.html"> <i class="uil uil-gold"></i> Items</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="workers.html"><i class="uil uil-users-alt"></i> Workers </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="assign.html"> <i class="uil uil-file-alt"></i>Assign </a>
+          </li>
+        </div>
+        </ul>
+      </nav> 
+     
+    </div>
 
       
         <div class="col-10">
-          <p style="font-size: 2rem; display: flex; justify-content: center;">Items</p>
+          <p style="font-size: 2rem; display: flex; justify-content: center;"><i class="uil uil-gold"></i> Items</p>
           <div class="tabs">
             <table class="table">
               <thead class="thead-light">
@@ -70,9 +101,9 @@
                       alt=""
                     />
                   </td>
-                  <td><button type="button"  class="button btn-secondary">View</button>
-                   <button  type="button" class="button btn-primary">Edit</button>
-                    <button  type="button" class="button btn-danger">Delete</button>
+                  <td><button type="button"  class="btn btn-secondary">View</button>
+                   <button  type="button" class="btn btn-primary">Edit</button>
+                    <button  type="button" class="btn btn-danger">Delete</button>
                   </td>
                 </tr>
                 <tr>
@@ -86,9 +117,9 @@
                       alt=""
                     />
                   </td>
-                  <td><button type="button"  class="button btn-secondary">View</button>
-                    <button  type="button" class="button btn-primary">Edit</button>
-                     <button  type="button" class="button btn-danger">Delete</button>
+                  <td><button type="button"  class="btn btn-secondary">View</button>
+                    <button  type="button" class="btn btn-primary">Edit</button>
+                     <button  type="button" class="btn btn-danger">Delete</button>
                    </td>
                 </tr>
                 <tr>
@@ -102,22 +133,51 @@
                       alt=""
                     />
                   </td>
-                  <td><button type="button"  class="button btn-secondary">View</button>
-                    <button  type="button" class="button btn-primary">Edit</button>
-                     <button  type="button" class="button btn-danger">Delete</button>
+                  <td><button type="button"  class="btn btn-secondary">View</button>
+                    <button  type="button" class="btn btn-primary">Edit</button>
+                     <button  type="button" class="btn btn-danger">Delete</button>
                    </td>
                 </tr>
               </tbody>
             </table>
           </div>
-          <div class="text-dark">
-            <div class="text-center p-3">
-              <hr>
+          
+          <div class="itemadd ft">
+            <br>
+
+            <h4 class="d-flex justify-content-center">Add an item</h4>
+            <br>
+            <form class="d-flex justify-content-center">
+              <div class="form-row ">
+                <div class="form-group col-md-6">
+                  <label for="name">Item name</label>
+                  <input class="form-control" id="name" placeholder="Diamond ring">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="rate">Item rate</label>
+                  <input  class="form-control" id="rate" placeholder="100000">
+                </div>
+              </div>
+              
+              <div class="form-group col-md-4">
+                <label class="form-label" for="customFile">Item photo</label>
+                    <input type="file" class="form-control" id="customFile" />
+              </div>
+            </form>
+            <div class="buttonsubmit d-flex justify-content-center ">
+              <button type="submit" class="btn btn-primary col-2">Submit</button>
+            </div>
+            
+          </div>
+          <div class="text-dark footer">
+            <div class="text-center ft p-2">
+
               © 2023 Copyright:
               <a class="text-dark" href="">Sunpasal</a>
             </div>
             <!-- Copyright -->
           </div>
+         
         </div>
       </div>
     </div>
@@ -139,5 +199,15 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("mylinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+      </script>
   </body>
 </html>

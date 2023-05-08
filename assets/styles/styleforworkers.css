@@ -1,5 +1,5 @@
 .sidenav{
-    height: 100vh;
+    min-height: 100vh;
     background-image:  linear-gradient(#6718de, 70%, rgb(166, 2, 220));  
     width: 100vw;
 }
@@ -14,9 +14,116 @@ a{
     width:7em;
     height: auto;
 }
-body{
-    width: 100vw;
-}
+
 .text-dark{
     padding-top: 5%;
+}
+.logo-img{
+    width:100%;
+    border-radius: 1%;
+}
+.nav-item > a:hover{
+    color:rgb(196, 192, 192);
+}
+.nav-item{
+    padding-left: 1em;
+}
+body{
+    width: 100vw;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.col-10  i{
+    margin-right: 0.4em;
+}
+.topnav {
+    overflow: hidden;
+    background:  linear-gradient(#6718de, 95%, rgb(166, 2, 220)); 
+    position: relative;
+  }
+.topnav a.icon {
+    background:  linear-gradient(#6718de, 100%, rgb(166, 2, 220)); 
+    display: block;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    
+  }
+.topnav a.icon:hover{
+ color:rgb(196, 192, 192);
+}
+
+  .topnav #myLinks {
+    display: none;
+  }
+  
+@media screen and (max-width:672px){
+    .sidenav{
+        display: none;
+    }
+    .topnav{
+        display: block;
+    }
+    .logo-img{
+        width: 25%;
+    }
+    .btn{
+        margin-top: 2%;
+        font-size: 85%;
+        width:75%;
+        height:3em;
+    }
+      table{
+        width: 100vw;
+        font-size: 55%;
+      }
+      .footer{
+        margin-bottom: 90%;
+      }
+      form{
+        margin-left: 5%;
+      }
+      form .form-control{
+        width:90%;
+      }
+      .ft{
+        width: 100vw;
+      }
+     
+      .buttonsubmit button{
+        padding-right: 10%;
+      }
+}
+@media screen and (min-width:672px){
+    .topnav{
+        display: none;
+    }
+}
+@media screen and (min-width:672px) and (max-width:767px){
+   form{
+    padding: 5%;
+   }
+}
+@media screen and (min-width:450px) and (max-width:672px){
+    table{
+        font-size: 70%;
+    }
+}
+
+
+@media screen and (max-width:360px){
+    .table{
+        font-size: 49%;
+    }
+}
+@media screen and (min-width:672px) and (max-width:974px) {
+  .btn{
+    margin-top: 2%;
+    font-size: smaller;
+  }
+  table{
+    font-size: smaller;
+  }
+}
+.ft{
+    border-top: 1px solid rgb(210, 208, 208);
 }

@@ -1,6 +1,6 @@
 
 .sidenav{
-    height: 100vh;
+    min-height: 100vh;
     background-image:  linear-gradient(#6718de, 70%, rgb(166, 2, 220));  
     width: 100vw;
 }
@@ -13,10 +13,97 @@ a{
     width:7em;
     height: auto;
 }
-body{
-    width: 100vw;
-}
+
 .text-dark{
     padding-top: 2%;
+}
+.logo-img{
+    width:100%;
+    border-radius: 1%;
+}
+.nav-item > a:hover{
+    color:rgb(196, 192, 192);
+}
+.nav-item{
+    padding-left: 1em;
+}
+body{
+    width: 100vw;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.col-10  i{
+    margin-right: 0.4em;
+}
+.topnav {
+    overflow: hidden;
+    background:  linear-gradient(#6718de, 95%, rgb(166, 2, 220)); 
+    position: relative;
+    width:100%;
+  }
+.topnav a.icon {
+    background:  linear-gradient(#6718de, 100%, rgb(166, 2, 220)); 
+    display: block;
+    position: absolute;
+    right: 2em;
+    top: 1em;
+    
+  }
+.topnav a.icon:hover{
+ color:rgb(196, 192, 192);
+}
+
+  .topnav #myLinks {
+    display: none;
+  }
+  
+@media screen and (max-width:700px){
+    .sidenav{
+        display: none;
+    }
+    .topnav{
+        display: block;
+    }
+    .logo-img{
+        width: 25%;
+    }
+    table{
+        font-size: 90%;
+        margin-left: 3%;
+    }
+    table td button{
+        width: 85%;
+        margin: 2%;
+    }
+    .footer{
+        margin-bottom: 95%;
+    }
+    .ft{
+        width: 100vw;
+    }
+    .itemadd{
+        margin-left: 5%;
+    }
+    .form-control{
+        width:90%;
+    }
+   .buttonsubmit{
+    width: 150%;
+    padding-right: 50%;
+   }
+   .buttonsubmit button{
+    padding-right: 16%;
+   }
+}
+@media screen and (min-width:701px){
+    .topnav{
+        display: none;
+    }
+}
+.uil-bars{
+    font-size: larger;
+}
+.ft{
+    border-top: 1px solid rgb(210, 208, 208);
+    
 }
 

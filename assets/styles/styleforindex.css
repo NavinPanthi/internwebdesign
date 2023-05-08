@@ -12,6 +12,7 @@ a{
 }
 body{
     width: 100vw;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .text-light{
     padding-left: 0;
@@ -19,9 +20,94 @@ body{
     position: sticky;
 }
 .but{
-    background:  linear-gradient(#6718de, 80%, rgb(166, 2, 220)); 
+    background:  linear-gradient(#6718de, 95%, rgb(166, 2, 220)); 
 }
 .card-text{
-    color:linear-gradient(#6718de, 80%, rgb(166, 2, 220)); 
+    color:#6718de;
     font-size: 1.5em;
+}
+img{
+    border-radius: 50%;
+}
+.logo-img{
+    width:100%;
+    border-radius: 1%;
+}
+.nav-item > a:hover{
+    color:rgb(196, 192, 192);
+}
+.nav-item{
+    padding-left: 1em;
+}
+
+.topnav {
+    overflow: hidden;
+    background:  linear-gradient(#6718de, 100%, rgb(166, 2, 220)); 
+    position: relative;
+  }
+.topnav a.icon {
+    background: #6718de;
+    display: block;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+
+  }
+.topnav a.icon:hover{
+ color:rgb(196, 192, 192);
+}
+
+  .topnav #myLinks {
+    display: none;
+  }
+  
+@media screen and (max-width:672px){
+    .sidenav{
+        display: none;
+    }
+    .topnav{
+        display: block;
+        margin-top: 0%;
+    }
+    .logo-img{
+        width: 25%;
+    }
+    .divs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+    .card{
+        margin-left: 21%;
+        
+    }
+    .recent{
+        height: 40vh;
+    }
+    .recent-content{
+        font-size: 0.75em;
+    }
+
+    .footer{
+        height: 15vh;
+    }
+    body{
+        margin-bottom: 60%;
+    }
+    .ft{
+        width: 100vw;
+        height: 50vh;
+    }
+    
+}
+@media screen and (min-width:672px){
+    .topnav{
+        display: none;
+    }
+}
+.uil-bars{
+    font-size: larger;
+}
+.ft{
+    border-top: 1px solid rgb(210, 208, 208);
 }
